@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Brand colours come from the settings table later (Prompt 3); these are the defaults. */
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --brand: #0f766e;
+  --brand-accent: #facc15;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --color-brand-accent: var(--brand-accent);
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
